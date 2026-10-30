@@ -1,0 +1,23 @@
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.bak
+
+# Large raw dataset CSVs (exceed GitHub 100MB limit and contain raw data)
+Data/synthea/csv/*.csv
+!Data/synthea/csv/.cache/
+
+# Streamlit secrets
+.streamlit/secrets.toml
+streamlit_dashboard/.streamlit/secrets.toml
+
+# OS files
+.DS_Store
+Thumbs.db
